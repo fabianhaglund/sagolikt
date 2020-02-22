@@ -38,6 +38,7 @@ export default {
 
 <style>
 #app {
+  display: flex;
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
