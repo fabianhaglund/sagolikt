@@ -64,16 +64,17 @@ export default {
 #header {
     display: flex; 
     flex-direction: row;
-    margin-right: 10%;
 }
 #headerTextBox {
     display: flex; 
     flex-direction: column;
-    margin: 40px;
+    margin-top: 20px;
+    margin-left: 160px;
+    width: 40%;
 }
 #picnic {
     display: flex; 
-    height: 500px;
+    width: 50%;
 }
 .headerTextTitle {
     font-size: 24px;
@@ -86,7 +87,7 @@ export default {
     margin-top: 0;
 }
 #balloon {
-    width: 120px;
+    width: 40%;
     padding: 20px;
 }
 #balloonButton {
