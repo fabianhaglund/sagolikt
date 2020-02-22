@@ -1,39 +1,28 @@
 <template>
   <div>
 
-    <img id="picnic" src="../assets/picnic.jpg"/>
-
-    <div id="buttons">
-      <button v-on:click="showInfo">INBJUDAN</button>
-      <button v-on:click="showLetter">Brev från bygden</button>
+    <div id="header">
+        <img id="picnic" src="../assets/picnic.jpg"/>
+        <div id="headerTextBox">
+            <p class="headerTextTitle">Location</p>
+            <p class="headerTextSub">
+                Idyllisk landsbygdsmiljö som peakar i Svensk högsommar. Nära Uppsala & Stockholm (inom 15 mils radius).
+            </p>
+            <p class="headerTextTitle">Tid</p>
+            <p class="headerTextSub">
+                18 juli, (och ha ingenting superviktigt den 19e. Inga dop, brunch med partners familj, arbetsintervjuer eller dylikt).
+            </p>
+            <button>OSA</button>
+        </div>
     </div>
 
-    <div v-if="state.showLetter">
-      <Letter />
-    </div>
+    <Letter/>
 
-    <div v-if="state.showInfo">
-      Sommardrinkar, disco långt efter gryning och garanterat energifylld kvalitétstid med nära, kära,
-      gamla och nya vänner. JA det är 100årsfest och JA det är 100årets fest, och du är kalasinbjuden. 
-      100 år har vi fyra tokiga vänner skramlat ihop och det vi vill fira med att samla en sagolik kompott 
-      av världens bästa och vackraste människor, nämligen våra vänner. Så ladda dina fysiska och psykiska 
-      batterier för en dag, kväll och natt med svensk högsommar när den är som allra bäst, där den numera 
-      förbjudna CIGGEN inte kommer portas, där du möter din mest idylliska sommarromans och en stämning som 
-      skriker kärlek och hedonism. Vi kan tyvärr INTE erbjuda köer, ordningsvakter med “makt” eller dyra VIP-bås. 
-      Det vi däremot kan erbjuda är ljuvlig björkskog, obegränsad ljudvolym och en hel del dopaminkickar. 
-      <div class="paragraph-spacer"/>
-      <div class="paragraph-spacer"/>
-      Varmt välkomna till oss!
-      <div class="paragraph-spacer"/>
-      <div class="paragraph-spacer"/>
-      Location - Idyllisk landsbygdsmiljö som peakar i Svensk högsommar. Nära Uppsala & Stockholm (inom 15 mils radius).
-      <div class="paragraph-spacer"/>
-      Datum - Spika 18 juli, (och ha ingenting superviktigt den 19e. Inga dop, brunch med partners familj, arbetsintervjuer eller dylikt)
-    </div>
   </div>
 </template>
 
 <script>
+
 import Letter from "./Letter.vue";
 
 export default {
@@ -65,8 +54,26 @@ export default {
 </script>
 
 <style>
+#header {
+    display: flex; 
+    flex-direction: row;
+}
+#headerTextBox {
+    display: flex; 
+    flex-direction: column;
+    margin: 40px;
+}
 #picnic {
     display: flex; 
     height: 500px;
+}
+.headerTextTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.headerTextSub {
+    font-size: 24px;
+    margin-top: 0;
 }
 </style>

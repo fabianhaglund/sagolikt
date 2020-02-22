@@ -38,7 +38,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -47,7 +47,6 @@ export default {
 button {
   font-family: 'Courier New', Courier, monospace;
   padding: 12px;
-  margin: 30px;
   font-size: 12;
   font-weight: 900;
   color: white; 

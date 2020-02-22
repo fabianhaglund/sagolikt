@@ -33,9 +33,10 @@
 
 <style scoped>
     .letter {
-        padding: 80px;
-        background-color: rgb(255, 166, 179);
-        color: white; 
+        font-size: 16px;
+        margin-top: 80px;
+        margin-right: 160px;
+        color: rgb(255, 166, 179);
         font-weight: 700;
     }
 </style>
