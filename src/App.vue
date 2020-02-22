@@ -1,28 +1,55 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div v-if="!this.verified">
+        <input id="password-box" @keyup.enter="verify" v-model="userAttempt" type="text">
+        <button v-on:click="verify">Verifiera inbjudan</button>
+    </div>
+   
+    <div v-if="this.verified">
+        <InvitePage/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import InvitePage from './components/InvitePage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    InvitePage
+  }, 
+  data(){
+    return {
+      verified: false,
+      userAttempt: ""
+    }
+  },
+  methods: {
+    verify(){
+      if(this.userAttempt == "björkpalm"){
+        this.verified = true; 
+      } 
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 80px;
+}
+button {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 8px;
+  margin: 30px;
+  font-weight: 600;
+  color: white; 
+  background-color: black;
 }
 </style>
