@@ -23,37 +23,23 @@
   </div>
 </template>
 
+
+
 <script>
 
-import Letter from "./Letter.vue";
+  import Letter from "./Letter.vue";
 
-export default {
-  name: "InvitePage",
-  components: {
-    Letter
-  },
-  data() {
-    return {
-      state: {
-        showLetter: false,
-        showInfo: true
-      }
-    };
-  },
-  methods: {
-    showLetter() {
-      console.log("show letter");
-      this.state.showLetter = true;
-      this.state.showInfo = false;
-    },
-    showInfo() {
-      console.log("show info");
-      this.state.showInfo = true;
-      this.state.showLetter = false;
+  export default {
+    name: "InvitePage",
+    components: {
+      Letter
     }
-  }
-};
+  };
+
 </script>
+
+
+
 
 <style>
 #invitePage {
@@ -73,8 +59,9 @@ export default {
     width: 40%;
 }
 #picnic {
-    display: flex; 
-    width: 50%;
+  width: 642px; 
+  height: 619px;
+
 }
 .headerTextTitle {
     font-size: 24px;

@@ -42,8 +42,6 @@ export default {
   justify-content: center;
   align-items: center;
   font-family: Helvetica;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   padding: 160px;
 }
 #verifyButton {
