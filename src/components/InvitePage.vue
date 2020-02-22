@@ -4,15 +4,17 @@
     <div id="header">
         <img id="picnic" src="../assets/picnic.jpg"/>
         <div id="headerTextBox">
-            <p class="headerTextTitle">Location</p>
+            <p class="headerTextTitle">PLATS</p>
             <p class="headerTextSub">
-                Idyllisk landsbygdsmiljö som peakar i Svensk högsommar. Nära Uppsala & Stockholm (inom 15 mils radius).
+                Idyllisk landsbygdsmiljö som peakar i svensk högsommar. Nära Uppsala & Stockholm (inom 15 mils radius).
             </p>
-            <p class="headerTextTitle">Tid</p>
+            <p class="headerTextTitle">TID</p>
             <p class="headerTextSub">
                 18 juli, (och ha ingenting superviktigt den 19e. Inga dop, brunch med partners familj, arbetsintervjuer eller dylikt).
             </p>
-            <button>OSA</button>
+            <a href="https://tillfabian.typeform.com/to/Y1EAJG">
+                <img id="balloon" src="../assets/balloon.png"/>
+            </a>
         </div>
     </div>
 
@@ -57,6 +59,7 @@ export default {
 #header {
     display: flex; 
     flex-direction: row;
+    margin-right: 10%;
 }
 #headerTextBox {
     display: flex; 
@@ -73,7 +76,15 @@ export default {
     margin-top: 10px;
 }
 .headerTextSub {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     margin-top: 0;
+}
+#balloon {
+    width: 120px;
+    padding: 20px;
+}
+#balloonButton {
+    background-color: white;
 }
 </style>

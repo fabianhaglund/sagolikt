@@ -2,7 +2,7 @@
   <div id="app">
     <div v-if="!this.verified">
         <input id="password-box" @keyup.enter="verify" v-model="userAttempt" type="text">
-        <button v-on:click="verify">Verifiera inbjudan</button>
+        <button id="verifyButton" v-on:click="verify">Verifiera inbjudan</button>
     </div>
    
     <div v-if="this.verified">
@@ -44,13 +44,14 @@ export default {
   color: #2c3e50;
   padding: 80px;
 }
-button {
+#verifyButton {
   font-family: 'Courier New', Courier, monospace;
-  padding: 12px;
-  font-size: 12;
+  padding: 4px;
+  margin: 10px;
+  font-size: 16px;
   font-weight: 900;
   color: white; 
-  background-color: lightpink;
+  background-color: #cb758c;
 }
 .paragraph-spacer {
   height: 20px;

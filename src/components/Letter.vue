@@ -33,10 +33,12 @@
 
 <style scoped>
     .letter {
+        text-align: justify;
+        font-family: 'Courier New', Courier, monospace;
         font-size: 16px;
         margin-top: 80px;
-        margin-right: 160px;
-        color: rgb(255, 166, 179);
+        margin-right: 10%;
+        color: #cb758c;
         font-weight: 700;
     }
 </style>
