@@ -41,8 +41,6 @@ export default {
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  padding: 80px;
 }
 #verifyButton {
   font-family: 'Courier New', Courier, monospace;
