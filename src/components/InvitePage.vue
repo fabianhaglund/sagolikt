@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="invitePage">
 
     <div id="header">
         <img id="picnic" src="../assets/picnic.jpg"/>
@@ -56,6 +56,11 @@ export default {
 </script>
 
 <style>
+#invitePage {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
 #header {
     display: flex; 
     flex-direction: row;

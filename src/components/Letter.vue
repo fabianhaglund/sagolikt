@@ -38,7 +38,7 @@
         font-size: 16px;
         margin-top: 80px;
         margin-right: 10%;
-        color: #cb758c;
+        color: #f587a4;
         font-weight: 700;
     }
 </style>
