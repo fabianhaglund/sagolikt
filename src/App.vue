@@ -46,10 +46,14 @@ export default {
 }
 button {
   font-family: 'Courier New', Courier, monospace;
-  padding: 8px;
+  padding: 12px;
   margin: 30px;
-  font-weight: 600;
+  font-size: 12;
+  font-weight: 900;
   color: white; 
-  background-color: black;
+  background-color: lightpink;
+}
+.paragraph-spacer {
+  height: 20px;
 }
 </style>
