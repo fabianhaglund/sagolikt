@@ -3,7 +3,7 @@
   <div id="app">
 
     <!--  LOG IN SCREEN -->
-    <div v-if="!this.verified">
+    <div id="logIn" v-if="!this.verified">
         <input id="password-box" @keyup.enter="verify" v-model="userAttempt" type="text" placeholder="Din kod :)">
         <button id="verifyButton" v-on:click="verify">Verifiera inbjudan</button>
     </div>
@@ -22,9 +22,22 @@
 
 <style>
 
+  @import url('https://fonts.googleapis.com/css?family=Marcellus&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap');
+
+  #logIn {
+    display: flex; 
+    flex: 1; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 12px; 
+  }
+
   #password-box {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
+    font-family: 'Sorts Mill Goudy';
+    padding: 30px;
+    margin: 30px;
     font-size: 16px;
     font-weight: 500;
     background-color: lightgrey; 
@@ -32,7 +45,7 @@
   }
 
   #verifyButton {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Sorts Mill Goudy';
     padding: 40px;
     font-size: 16px;
     font-weight: 900;

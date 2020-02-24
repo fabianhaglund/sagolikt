@@ -13,20 +13,27 @@
             <div id="TopRightSection">
 
                 <div class="title">
-                    PLATS
+                    Plats
                 </div>
                 <div class="text">
                     Idyllisk landsbygdsmiljö som peakar i svensk högsommar. Nära Uppsala & Stockholm (inom 15 mils radius).
                 </div>
 
                 <div class="title">
-                    TID
+                    Tid
                 </div>
                 <div class="text">
                     18 juli, (och ha ingenting superviktigt den 19e. Inga dop, brunch med partners familj, arbetsintervjuer eller dylikt).
                 </div>
 
             </div>
+
+            <div class="balloonBox">
+                <a href="https://tillfabian.typeform.com/to/Y1EAJG">
+                    <img id="balloon" src="../assets/balloon.png"/>
+                </a>
+            </div>
+
 
         </div>
 
@@ -71,15 +78,26 @@
         filter: brightness(135%);
     }
 
+    #balloon {
+        max-height: 200px;
+    }
+
+    .balloonBox{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
     .title {
-        font-family: Helvetica;
+        font-family: 'Sorts Mill Goudy';
         font-size: 32px;
         padding: 12px;
         margin-top: 20px;
     }
 
     .text {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Marcellus';
         font-size: 16px;
         padding: 12px;
     }
@@ -104,7 +122,24 @@
 
         components: {
             Letter
-        }
+        },
+
+        data(){
+            return {
+                song: {
+                    id: 'muscle-car',
+                    name: 'Muscle Car',
+                    file: new Audio(require('../assets/celebration.mp3')),
+                    isPlaying: false
+                }
+            }
+        },
+
+        mounted: function(){
+            console.log('Play song on mount');
+            var audio = this.song.file;
+            audio.play();
+        }, 
 
     }
 

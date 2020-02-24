@@ -30,12 +30,10 @@
 
     .letter {
         text-align: justify;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Marcellus';
         font-size: 16px;
-        margin-top: 40px;
         padding: 16px;
         color: #f587a4;
-        font-weight: 600;
     }
 
 </style>
