@@ -25,19 +25,24 @@
     </div>
 </template>
 
+
+<style scoped>
+
+    .letter {
+        text-align: justify;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        margin-top: 40px;
+        padding: 16px;
+        color: #f587a4;
+        font-weight: 600;
+    }
+
+</style>
+
+
 <script>
     export default {
         name: 'Letter'
     }
 </script>
-
-<style scoped>
-    .letter {
-        text-align: justify;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
-        margin-top: 80px;
-        color: #f587a4;
-        font-weight: 700;
-    }
-</style>

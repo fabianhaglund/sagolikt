@@ -43,26 +43,27 @@
 
 <style>
 #invitePage {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
 }
 #header {
-    display: flex; 
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
+
 #headerTextBox {
     display: flex; 
+    flex: 1;
     flex-direction: column;
     margin-top: 20px;
     margin-left: 160px;
     width: 40%;
 }
 #picnic {
-  width: 642px; 
-  height: 619px;
-
+  display: flex;
+  flex: 1;
+  max-width: 20%; 
 }
+
+
 .headerTextTitle {
     font-size: 24px;
     font-weight: 700;
