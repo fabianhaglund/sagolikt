@@ -3,11 +3,11 @@
     <div id="LandingPage">
 
         <div v-if="this.song.isPlaying">
-            <button class="mute" v-on:click="toggleMute()">Pause Celebration</button>
+            <button class="mute" v-on:click="toggleMute()">TYST</button>
         </div>
 
         <div v-if="!this.song.isPlaying">
-            <button class="mute" v-on:click="toggleMute()">Play Celebration</button>
+            <button class="mute" v-on:click="toggleMute()">MUSIK</button>
         </div>
         
 
@@ -81,7 +81,6 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 80px;
-        height: 700px;
     }
 
     #TopLeftSection {
@@ -98,7 +97,7 @@
     #picnic {
         display: flex; 
         flex: 1;
-        width: 60px;
+        width: 100%;
         filter: brightness(135%);
     }
 
