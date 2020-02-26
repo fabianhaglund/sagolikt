@@ -4,7 +4,7 @@
 
     <!--  LOG IN SCREEN -->
     <div id="logIn" v-if="!this.verified">
-        <input id="password-box" @keyup.enter="verify" v-model="userAttempt" type="text" placeholder="Din kod :)">
+        <input id="password-box" @keyup.enter="verify" v-model="userAttempt" type="text" placeholder="festkod">
         <button id="verifyButton" v-on:click="verify">Verifiera inbjudan</button>
     </div>
 

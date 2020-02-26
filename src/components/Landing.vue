@@ -130,6 +130,35 @@
         padding: 12px;
     }
 
+    @media (max-width: 1500px) {
+
+        .title {
+            font-size: 36px;
+        }
+
+        .text {
+            font-size: 18px;
+        }
+
+        #picnic {
+            height: 50%;
+        }
+    }
+
+    @media (max-width: 1500px){
+        #TopSection {
+            flex-direction: column;
+        }
+
+        #picnic {
+            width: 500px;
+        }
+
+        .balloonBox {
+            margin-top: 80px;
+        }
+    }
+
     @media (max-width: 800px) {
         /* CSS that should be displayed if width is equal to or less than 800px goes here */
 
@@ -144,7 +173,8 @@
         }
 
         #picnic {
-            max-height: 400px;
+            height: auto;
+            width: 80%
         }
 
         #TopSection {
