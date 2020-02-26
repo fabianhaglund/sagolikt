@@ -73,7 +73,7 @@
         display: flex;
         flex: 1;
         flex-direction: column;  
-        padding: 80px;
+        padding: 100px;
         
     }
 
@@ -81,6 +81,7 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 80px;
+        height: 700px;
     }
 
     #TopLeftSection {
@@ -91,7 +92,7 @@
 
     #TopRightSection {
         flex: 1;
-        padding: 80px;
+        padding: 40px;
     }
 
     #picnic {
@@ -122,7 +123,6 @@
         font-family: 'Sorts Mill Goudy';
         font-size: 48px;
         padding: 12px;
-        margin-top: 20px;
     }
 
     .text {
