@@ -31,9 +31,18 @@
     .letter {
         text-align: justify;
         font-family: 'Marcellus';
-        font-size: 16px;
+        font-size: 24px;
+        font-weight: 600;
         padding: 16px;
         color: #f587a4;
+    }
+
+    @media (max-width: 800px) {
+
+        .letter {
+            font-size: 16px;
+        }
+
     }
 
 </style>
