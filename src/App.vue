@@ -50,7 +50,7 @@
     font-size: 16px;
     font-weight: 900;
     color: white; 
-    background-color: #cb758c;
+    background-color: #d7899d;
   }
 
   .paragraph-spacer {

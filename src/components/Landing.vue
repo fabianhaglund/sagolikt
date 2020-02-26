@@ -130,6 +130,8 @@
         padding: 12px;
     }
 
+    /*   RESPONSIVENESS  */
+
     @media (max-width: 1500px) {
 
         .title {
@@ -141,21 +143,14 @@
         }
 
         #picnic {
-            height: 50%;
-        }
-    }
-
-    @media (max-width: 1500px){
-        #TopSection {
-            flex-direction: column;
-        }
-
-        #picnic {
+            height: 550px;
             width: 500px;
         }
 
-        .balloonBox {
-            margin-top: 80px;
+        #TopRightSection {
+            padding: 0px;
+            padding-left: 40px; 
+            padding-right: 40px;
         }
     }
 
