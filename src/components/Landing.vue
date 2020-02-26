@@ -169,7 +169,9 @@
 
         #picnic {
             height: auto;
-            width: 80%
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
         }
 
         #TopSection {

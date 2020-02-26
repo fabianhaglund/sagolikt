@@ -14,7 +14,9 @@
         <div class="paragraph-spacer"/>
         Vi har ännu inte berättat var vi tänkte att vi skulle samlas för detta episka evenemang men det är en plats med en historia. Bygden var världsledande på radioapparater och skidor på 50-talet, kultstatus för en underground student-festival som pågick i ett antal år runt millennieskiftet, den innehar en masugn från 1600-talet byggd av en rik holländare, en så frodig lövskog som du kan önska dig och ja, inte så mycket mer. Här bor inte mer än 500 invånare och sedan ett antal år har denna magiska landsbygdsort, likt hela den Svenska landsbygden, tappat liv och hjärta på många sätt. Helgen den 16-19 juli däremot, då kommer detta inte att vara sant. Då ämnar vi att gasa på alla tänkbara cylindrar och överösa bygden med en tsunamivåg av liv och dopamin.
         <div class="paragraph-spacer"/>
-        Detta huset, med dess omkringliggande lövskog, den Svenska högsommarens solsken, vänners sällskap, rykande mat, musik i olika energifyllda former och piggande stimuli i mängder av varianter - konvergerar i en temporär magisk värld vi ämnar att bygga upp runt denna plats för en helg vi sent kommer att glömma. Runt denna plats ska vi samlas för att fira in decenniet, att vi tillsammans levt 100 år, ja i essensen - LIVET ska firas. Om ni vill komma, är vi mer än glada. Varmt välkomna till oss!        <div class="paragraph-spacer"/>
+        Detta huset, med dess omkringliggande lövskog, den Svenska högsommarens solsken, vänners sällskap, rykande mat, musik i olika energifyllda former och piggande stimuli i mängder av varianter - konvergerar i en temporär magisk värld vi ämnar att bygga upp runt denna plats för en helg vi sent kommer att glömma. Runt denna plats ska vi samlas för att fira in decenniet, att vi tillsammans levt 100 år, ja i essensen - LIVET ska firas. Om ni vill komma, är vi mer än glada.       
+        <div class="paragraph-spacer"/>
+        Varmt välkomna! 
     </div>
 </template>
 
