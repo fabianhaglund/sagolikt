@@ -40,7 +40,7 @@
     margin: 30px;
     font-size: 16px;
     font-weight: 500;
-    background-color: lightgrey; 
+    background-color: rgb(255, 253, 250); 
     color: #cb758c;
   }
 

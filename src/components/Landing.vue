@@ -37,7 +37,7 @@
 
                 <div class="balloonBox">
                     <a href="https://tillfabian.typeform.com/to/Y1EAJG">
-                        <img id="balloon" src="../assets/balloon.png"/>
+                        <img class="balloon" src="../assets/balloon.png"/>
                     </a>
                 </div>
 
@@ -101,7 +101,7 @@
         filter: brightness(135%);
     }
 
-    #balloon {
+    .balloon {
         max-height: 200px;
     }
 
@@ -110,6 +110,12 @@
         align-items: center;
         justify-content: center;
         padding: 40px;
+    }
+
+    .balloonBox:hover {
+        transition: 1.5s;
+        filter: brightness(110%);
+        transform: rotate(360deg);
     }
 
     .title {
