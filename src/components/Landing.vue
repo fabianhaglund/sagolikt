@@ -168,10 +168,10 @@
         }
 
         #picnic {
-            height: auto;
-            width: 80%;
-            padding: 10px;
-            margin-bottom: 20px;
+            height: 330px;
+            width: 300px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         #TopSection {
