@@ -61,7 +61,7 @@
     .mute {
         display: flex;
         align-items: center;
-        background-color: #f587a4;
+        background-color: #fb77a3;
         font-family: 'Sorts Mill Goudy';
         color: white;
         margin-bottom: 10px;

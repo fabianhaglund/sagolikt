@@ -41,7 +41,7 @@
     font-size: 16px;
     font-weight: 500;
     background-color: rgb(255, 253, 250); 
-    color: #cb758c;
+    color: #fb77a3;
   }
 
   #verifyButton {
@@ -50,7 +50,7 @@
     font-size: 16px;
     font-weight: 900;
     color: white; 
-    background-color: #d7899d;
+    background-color: #fb77a3;
   }
 
   .paragraph-spacer {
