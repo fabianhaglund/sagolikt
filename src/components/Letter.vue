@@ -17,6 +17,8 @@
         Detta huset, med dess omkringliggande lövskog, den Svenska högsommarens solsken, vänners sällskap, rykande mat, musik i olika energifyllda former och piggande stimuli i mängder av varianter - konvergerar i en temporär magisk värld vi ämnar att bygga upp runt denna plats för en helg vi sent kommer att glömma. Runt denna plats ska vi samlas för att fira in decenniet, att vi tillsammans levt 100 år, ja i essensen - LIVET ska firas. Om ni vill komma, är vi mer än glada.       
         <div class="paragraph-spacer"/>
         Varmt välkomna! 
+        <div class="paragraph-spacer"/>
+        / Erik, Samuel, Fabian & August 
     </div>
 </template>
 

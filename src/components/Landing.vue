@@ -154,8 +154,8 @@
         }
     }
 
-    @media (max-width: 800px) {
-        /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    @media (max-width: 500px) {
+        /* CSS that should be displayed if width is equal to or less than 800px goes here * /
 
         .mute {
             padding: 2px; 
