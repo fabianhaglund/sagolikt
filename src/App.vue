@@ -2,20 +2,11 @@
   <div id="app">
     <!--  LOG IN SCREEN -->
     <div id="logIn" v-if="!this.verified">
-    <marquee behavior="scroll" class="scrolling-text" direction="left">
-    Type code below, press enter/done to continue... 
-    </marquee>
-      <div class="lineContainer top" />
-      <div class="lineContainer top red" />
-      <div class="lineContainer top blue" />
-      
+
       <div class="lineContainer" />
       <div class="lineContainer red" />
       <div class="lineContainer blue" />
      
-      <div class="lineContainer bottom" />
-      <div class="lineContainer bottom red" />
-      <div class="lineContainer bottom blue" />
       
       <div class="password-text password-text-5">
         {{ this.userAttempt }}
@@ -57,9 +48,7 @@
         {{ this.userAttempt }}
       </div>
       <button id="verifyButton" v-on:click="verify"></button>
-          <marquee behavior="scroll" class="scrolling-text" direction="right">
-    Type code above, press enter/done to continue... 
-    </marquee>
+
     </div>
 
     <!--  LANDING PAGE -->
@@ -83,7 +72,7 @@ body {
   font-family: "Archivo Black";
   height: 100vh;
   width: 100vw;
-  background: black;
+  background: #111;
 
 }
 
@@ -99,53 +88,48 @@ body {
 }
 
 .scrolling-text{
-color:white;}
+color:red;
+text-transform:uppercase}
 
 @keyframes move {
   0% {
-    transform: translateX(-50vw) rotate(30deg);
-  filter:blur(0px);
+    transform: translate(-50vw, 1vh) rotate(30deg) scale(0.9);
+  filter:blur(10px);
   }
   50%{
-  filter:blur(5px);
+  filter:blur(50px);
   }
   100% {
-  filter:blur(0px);
-    transform: translateX(50vw) rotate(-40deg);
+  filter:blur(10px);
+    transform: translate(50vw , -3vh) rotate(-40deg)scale(1);
   }
 }
 @keyframes moveRotate {
   0% {
-    transform: translateX(-50vw) rotate(40deg) scale(1);
-  filter:blur(0px);
+    transform: translate(-50vw, -1vh) rotate(40deg) scale(1);
+  filter:blur(10px);
   }
   50%{
-  filter:blur(5px);
+  filter:blur(50px);
   }
   100% {
-  filter:blur(0px);
-    transform: translateX(50vw) rotate(-50deg) scale(0.7);
+  filter:blur(10px);
+    transform: translate(50vw, 1vh) rotate(-50deg) scale(0.9);
   }
 }
 
 .lineContainer {
+opacity:0.6;
   mix-blend-mode: screen;
   background: rgb(0, 255, 0);
   position: absolute;
-  height: 20vh;
-  width: 20vh;
-  border-radius:10vh;
+  height: 80vh;
+  width: 80vh;
+  border-radius:40vh;
   animation: move 0.5s ease-in-out infinite alternate;
 }
 
-.top{
-top:20px;
-animation-duration:0.25s;
-}
-.bottom{
-animation-duration:0.25s;
-bottom:-20px;
-}
+
 .red {
   animation-delay: 0.02s;
   background: rgb(255, 0, 0);
@@ -158,10 +142,10 @@ bottom:-20px;
 
 @keyframes dance {
   from {
-    transform: translateX(-10px);
+    transform: translate(-20px) rotate(1deg) ;
   }
   to {
-    transform: translateX(10px);
+    transform: translate(20px) rotate(0deg);
   }
 }
 
@@ -173,7 +157,6 @@ bottom:-20px;
   height: 40px;
   text-transform: uppercase;
   font-family: "Archivo Black";
-  color: blue;
   font-size: 80px;
   font-weight: 800;
   width: 100vw;
@@ -190,20 +173,18 @@ bottom:-20px;
   line-height: 20px;
 }
 .password-text-3 {
-  color:#0000E6;
   margin: 10px 0px;
   height: 10px;
   line-height: 10px;
   animation-duration: 0.25s;
 }
 .password-text-4 {
-  animation-duration: 0.125s;
+  animation-duration: 0.12s;
   margin: 15px 0px;
   height: 2px;
   line-height: 2px;
 }
 .password-text-5 {
-  color:#0000E6;
   animation-duration: 0.25s;
   margin: 15px 0px;
   height: 2px;
@@ -222,7 +203,7 @@ bottom:-20px;
 }
 
 #password-box::placeholder {
-  color: white;
+  color: black;
 }
 
 #verifyButton {
