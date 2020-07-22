@@ -1,74 +1,64 @@
 <template>
   <div class="letter">
-    <span>
-      Kära vänner
+    <span class="sp-title">
+      HEJ
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Det vi nu vill berätta för er, är något som vi vill att ni läser med en så
-      kallad odelad uppmärksamhet. För som ett rymdskepp med atomiskt skärpt
-      precision och tveklös riktning, ämnar vi att öppna för nya sprakande och
-      färgrika världar som förgyller samtliga sinnen och lite därtill.
+      På LÖRDAG vill vi att ni kommer och dansar med oss i det sagolika TOBO
+      utanför Uppsala. Bland tigerälgar, nakna björksvampar, dockor, discoljus,
+      drömmig musik och allmänt sagolika inslag kan absolut ingenting gå fel.
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Detta inledande allvar är snart påväg att spåra ur i total lek och det är
-      väl precis vad livet är, en allvarlig lek?
+      Kom, ta med dig en eller flera goda vänner! Säg gärna till så vi har lite
+      koll på ungefär hur många som kommer.
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Vi tycker nog livet är som mest njutbart när det är mer lek än allvar, mer
-      frihet än fångenskap, mer samhörighet än isolation, mer värme än kyla, mer
-      solsken än storm, mer kärlek än hat. Öppna dörrar slås in till höger och
-      vänster och så brukar det ju kunna bli när pirret bubblar.
+      VARMT välkomna till Tobo!
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Vidare så är vad vi känner inte nödvändigtvis vad vi längtar till. I
-      ärlighetens namn längtar vi efter många saker. Men här och nu längtar vi
-      särskilt efter en sak. Vi längtar efter en fest i sommar utan motsvarighet
-      i våra liv, Sverige och kanske rent av i hela världshistorien, i en
-      kulmination av allt det vi älskar.
+      /// en spretig skara festfixare
+    </span>
+    <div class="paragraph-spacer" />
+    <span class="sp-title">
+      Praktiskt:
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Vi längtar efter att stråla samman i ett hav av världens bästa människor,
-      nämligen våra vänner, med alla avsikter att tillsammans simma runt i
-      eufori, kärlek och en uppsjö av hedonism under en dag, en kväll, en natt
-      och morgon. Vi längtar efter sommaren 2020, vi längtar efter 18e juli. Vi
-      längtar efter att få fira våra 100 genomlevda år med er allihopa.
+      Vi håller hus i Tobo, Gamla Folkets Hus (numera “Tobo Bruksmuseum”)
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Vi har ännu inte berättat var vi tänkte att vi skulle samlas för detta
-      episka evenemang men det är en plats med en historia. Bygden var
-      världsledande på radioapparater och skidor på 50-talet, kultstatus för en
-      underground student-festival som pågick i ett antal år runt
-      millennieskiftet, den innehar en masugn från 1600-talet byggd av en rik
-      holländare, en så frodig lövskog som du kan önska dig och ja, inte så
-      mycket mer. Här bor inte mer än 500 invånare och sedan ett antal år har
-      denna magiska landsbygdsort, likt hela den Svenska landsbygden, tappat liv
-      och hjärta på många sätt. Helgen den 16-19 juli däremot, då kommer detta
-      inte att vara sant. Då ämnar vi att gasa på alla tänkbara cylindrar och
-      överösa bygden med en tsunamivåg av liv och dopamin.
+      Koordinater till Google Maps: 60°15'26.8"N 17°38'49.3"E
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Detta huset, med dess omkringliggande lövskog, den Svenska högsommarens
-      solsken, vänners sällskap, rykande mat, musik i olika energifyllda former
-      och piggande stimuli i mängder av varianter - konvergerar i en temporär
-      magisk värld vi ämnar att bygga upp runt denna plats för en helg vi sent
-      kommer att glömma. Runt denna plats ska vi samlas för att fira in
-      decenniet, att vi tillsammans levt 100 år, ja i essensen - LIVET ska
-      firas. Om ni vill komma, är vi mer än glada.
+      Enklast att ta sig dit är med Upptåget som går från Uppsala med en ynka
+      restid på 29 minuter. Sedan ligger lokalen 5 minuter gång från
+      tågstationen. Biljet köpes bäst med UL-appen
     </span>
     <div class="paragraph-spacer" />
     <span>
-      Varmt välkomna!
+      Med bil är det bara E4an norrut från Uppsala i ca 45 min
     </span>
     <div class="paragraph-spacer" />
     <span>
-      / Erik, Samuel, Fabian & August
+      Vi håller oss till ett perfekt antal människor (“…lockdown i Paris, vi
+      svävar fram i Anders Tegnells Corona-paradis…”)
+    </span>
+    <div class="paragraph-spacer" />
+    <span>
+      ⁃Det kommer finnas bardisk med citrus, sockerlag, shaker, skärbräda, is
+      etc. men ta med egen sprit såväl som handsprit om ni är såna
+    </span>
+    <div class="paragraph-spacer" />
+    <span>
+      Det finns ett begränsat antal sovplatser men krisar det så löser vi
+      självklart, annars rekommenderar vi tåg hem när man känner sig klar. Sista
+      tåget går 00.46 men sen börjar de gå 03.48 igen.
     </span>
   </div>
 </template>
@@ -81,6 +71,7 @@
   padding: 16px;
   color: blue;
 }
+
 
 @media (max-width: 800px) {
   .letter {
