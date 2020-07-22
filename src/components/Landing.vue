@@ -2,10 +2,10 @@
   <div>
     <div class="picture-container">
     <parallax class="paralax">
-      <img class="img-blend" src="../assets/old.jpeg" />
+      <img class="img-blend" src="../assets/old.jpg" />
     </parallax>
     <parallax class="paralax">
-      <img src="../assets/inne.jpeg" />
+      <img src="../assets/inne.jpg" />
     </parallax>
     <parallax class="paralax">
       <img src="../assets/ute.jpg" />
