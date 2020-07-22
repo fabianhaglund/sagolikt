@@ -159,8 +159,8 @@ export default {
   data() {
     return {
       song: {
-        id: "muscle-car",
-        name: "Muscle Car",
+        id: "baom-baom",
+        name: "Baumibam",
         file: new Audio(require("../assets/celebration.mp3")),
         isPlaying: false,
       },
