@@ -1,246 +1,193 @@
 <template>
-
-    <div id="LandingPage">
-
-        <div v-if="this.song.isPlaying">
-            <button class="mute" v-on:click="toggleMute()">TYST</button>
-        </div>
-
-        <div v-if="!this.song.isPlaying">
-            <button class="mute" v-on:click="toggleMute()">MUSIK</button>
-        </div>
-        
-
-        <div id="TopSection">
-
-            <div id="TopLeftSection">
-
-                <img id="picnic" src="../assets/picnic.jpg"/>
-
-            </div>
-
-            <div id="TopRightSection">
-
-                <div class="title">
-                    Plats
-                </div>
-                <div class="text">
-                    Idyllisk landsbygdsmiljö som peakar i svensk högsommar. Nära Uppsala & Stockholm (inom 15 mils radius). Mer exakt info kommer. 
-                </div>
-
-                <div class="title">
-                    Tid
-                </div>
-                <div class="text">
-                    18 juli, (och ha ingenting superviktigt den 19e. Inga dop, brunch med partners familj, arbetsintervjuer eller dylikt).
-                </div>
-
-                <div class="balloonBox">
-                    <a href="https://tillfabian.typeform.com/to/Y1EAJG">
-                        <img class="balloon" src="../assets/balloon.png"/>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div id="Feed">
-
-            <Letter/>
-
-        </div>
-
+  <div>
+    <div class="picture-container">
+    <parallax class="paralax">
+      <img class="img-blend" src="../assets/old.jpeg" />
+    </parallax>
+    <parallax class="paralax">
+      <img src="../assets/inne.jpeg" />
+    </parallax>
+    <parallax class="paralax">
+      <img src="../assets/ute.jpg" />
+    </parallax>
+    <parallax class="paralax">
+      <img src="../assets/ute2.jpg" />
+    </parallax>
+    <parallax class="paralax">
+      <img src="../assets/tobo.jpg" />
+    </parallax>
+  </div>
+  <div id="LandingPage">
+    <div v-if="this.song.isPlaying">
+      <button class="mute" v-on:click="toggleMute()">TYST</button>
     </div>
 
+    <div v-if="!this.song.isPlaying">
+      <button class="mute" v-on:click="toggleMute()">MUSIK</button>
+    </div>
+
+    <div id="TopSection">
+      what
+    </div>
+
+    <div id="Feed">
+      <Letter />
+    </div>
+  </div>
+  </div>
 </template>
 
 <style scoped>
+.picture-container {
+width:100vw;
+  z-index: 10;
+  top: 0;
+  left:0;
+  position: absolute;
+  mix-blend-mode:difference;
+}
+.img-blend{
+}
 
-    .mute {
-        display: flex;
-        align-items: center;
-        background-color: #fb77a3;
-        font-family: 'Sorts Mill Goudy';
-        color: white;
-        margin-bottom: 10px;
-        padding: 10px;
-        font-size: 12px;
-    }
+.mute {
+  display: flex;
+  align-items: center;
+  background-color: #fb77a3;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 12px;
+}
 
-    #LandingPage {
-        display: flex;
-        flex: 1;
-        flex-direction: column;  
-        padding: 100px;
-        
-    }
+#LandingPage {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 100px;
+}
 
-    #TopSection {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 80px;
-    }
+#TopSection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+}
 
-    #TopLeftSection {
-        display: flex;
-        flex: 1;
-        
-    }
+.title {
+  font-size: 48px;
+  padding: 12px;
+}
 
-    #TopRightSection {
-        flex: 1;
-        padding: 40px;
-    }
+.text {
+  font-size: 24px;
+  padding: 12px;
+}
 
-    #picnic {
-        display: flex; 
-        flex: 1;
-        width: 100%;
-        filter: brightness(135%);
-    }
+/*   RESPONSIVENESS  */
 
-    .balloon {
-        max-height: 200px;
-    }
+@media (max-width: 1500px) {
+  .title {
+    font-size: 36px;
+  }
 
-    .balloonBox{
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
-    }
+  .text {
+    font-size: 18px;
+  }
 
-    .balloonBox:hover {
-        transition: 1.5s;
-        filter: brightness(110%);
-        transform: rotate(360deg);
-    }
+  #picnic {
+    height: 550px;
+    width: 500px;
+  }
 
-    .title {
-        font-family: 'Sorts Mill Goudy';
-        font-size: 48px;
-        padding: 12px;
-    }
+  #TopRightSection {
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
-    .text {
-        font-family: 'Marcellus';
-        font-size: 24px;
-        padding: 12px;
-    }
+@media (max-width: 500px) {
+  .mute {
+    padding: 2px;
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
 
-    /*   RESPONSIVENESS  */
+  #LandingPage {
+    padding: 4px;
+  }
 
-    @media (max-width: 1500px) {
+  #picnic {
+    height: 330px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-        .title {
-            font-size: 36px;
-        }
+  #TopSection {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
 
-        .text {
-            font-size: 18px;
-        }
+  #TopRightSection {
+    padding: 0px;
+  }
 
-        #picnic {
-            height: 550px;
-            width: 500px;
-        }
+  .title {
+    font-size: 32px;
+  }
 
-        #TopRightSection {
-            padding: 0px;
-            padding-left: 40px; 
-            padding-right: 40px;
-        }
-    }
-
-    @media (max-width: 500px) {
-
-        .mute {
-            padding: 2px; 
-            font-size: 10px;
-            margin-bottom: 2px;
-        }
-
-        #LandingPage {
-            padding: 4px;
-        }
-
-        #picnic {
-            height: 330px;
-            width: 300px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        #TopSection {
-            flex-direction: column;
-            margin-bottom: 0px;
-        }
-
-        #TopRightSection {
-            padding: 0px;
-        }
-
-        .title {
-            font-size: 32px;
-        }
-
-        .text {
-            font-size: 16px;
-        }
-
-    }
-
+  .text {
+    font-size: 16px;
+  }
+}
 </style>
 
-
 <script>
+import Letter from "./Letter.vue";
+import Parallax from "vue-parallaxy";
 
-    import Letter from "./Letter.vue";
-    
-    export default {  
+export default {
+  name: "Landing",
 
-        name: "Landing",
+  components: {
+    Letter,
+    Parallax,
+  },
 
-        components: {
-            Letter
-        },
+  data() {
+    return {
+      song: {
+        id: "muscle-car",
+        name: "Muscle Car",
+        file: new Audio(require("../assets/celebration.mp3")),
+        isPlaying: false,
+      },
+    };
+  },
 
-        data(){
-            return {
-                song: {
-                    id: 'muscle-car',
-                    name: 'Muscle Car',
-                    file: new Audio(require('../assets/celebration.mp3')),
-                    isPlaying: false
-                }
-            }
-        },
+  mounted: function() {
+    console.log("Play song on mount");
+    var audio = this.song.file;
+    audio.play();
+    this.song.isPlaying = true;
+    console.log(this.song.isPlaying);
+  },
 
-        mounted: function(){
-            console.log('Play song on mount');
-            var audio = this.song.file;
-            audio.play();
-            this.song.isPlaying = true;
-            console.log(this.song.isPlaying);
-        }, 
-
-        methods: {
-            toggleMute: function(){
-                var audio = this.song.file;
-                if(this.song.isPlaying == false){
-                    audio.play();
-                    this.song.isPlaying = true;
-                    console.log("playing music");
-                } else {
-                    audio.pause(); 
-                    this.song.isPlaying = false; 
-                    console.log("paused music");
-                }
-            }
-        }
-
-    }
-
+  methods: {
+    toggleMute: function() {
+      var audio = this.song.file;
+      if (this.song.isPlaying == false) {
+        audio.play();
+        this.song.isPlaying = true;
+        console.log("playing music");
+      } else {
+        audio.pause();
+        this.song.isPlaying = false;
+        console.log("paused music");
+      }
+    },
+  },
+};
 </script>

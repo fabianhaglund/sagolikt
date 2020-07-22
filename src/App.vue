@@ -2,12 +2,10 @@
   <div id="app">
     <!--  LOG IN SCREEN -->
     <div id="logIn" v-if="!this.verified">
-
       <div class="lineContainer" />
       <div class="lineContainer red" />
       <div class="lineContainer blue" />
-     
-      
+
       <div class="password-text password-text-5">
         {{ this.userAttempt }}
       </div>
@@ -48,11 +46,15 @@
         {{ this.userAttempt }}
       </div>
       <button id="verifyButton" v-on:click="verify"></button>
-
     </div>
 
     <!--  LANDING PAGE -->
     <div v-if="this.verified">
+      <div>
+        <div class="lineContainer" />
+        <div class="lineContainer red" />
+        <div class="lineContainer blue" />
+      </div>
       <Landing />
     </div>
   </div>
@@ -65,15 +67,28 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-
 
 #app {
   font-family: "Archivo Black";
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
+  max-width: 100vw;
   background: #111;
+}
 
+span::selection {
+  background: purple;
+}
+
+span {
+  color: black;
+  background: rgba(255, 255, 0, 0.5);
+  line-height: 1.5;
 }
 
 #logIn {
@@ -87,48 +102,56 @@ body {
   justify-content: center;
 }
 
-.scrolling-text{
-color:red;
-text-transform:uppercase}
+.scrolling-text {
+  color: red;
+  text-transform: uppercase;
+}
 
 @keyframes move {
   0% {
     transform: translate(-50vw, 1vh) rotate(30deg) scale(0.9);
-  filter:blur(10px);
+    filter: blur(10px);
   }
-  50%{
-  filter:blur(50px);
+  50% {
+    filter: blur(50px);
   }
   100% {
-  filter:blur(10px);
-    transform: translate(50vw , -3vh) rotate(-40deg)scale(1);
+    filter: blur(10px);
+    transform: translate(50vw, -3vh) rotate(-40deg) scale(1);
   }
 }
 @keyframes moveRotate {
   0% {
     transform: translate(-50vw, -1vh) rotate(40deg) scale(1);
-  filter:blur(10px);
+    filter: blur(10px);
   }
-  50%{
-  filter:blur(50px);
+  50% {
+    filter: blur(50px);
   }
   100% {
-  filter:blur(10px);
+    filter: blur(10px);
     transform: translate(50vw, 1vh) rotate(-50deg) scale(0.9);
   }
 }
 
 .lineContainer {
-opacity:0.6;
+  z-index: 0;
+  opacity: 0.6;
   mix-blend-mode: screen;
   background: rgb(0, 255, 0);
-  position: absolute;
-  height: 80vh;
-  width: 80vh;
-  border-radius:40vh;
+  position: fixed;
+  height: 80vw;
+  width: 80vw;
+  border-radius: 40vw;
   animation: move 0.5s ease-in-out infinite alternate;
 }
-
+@media (max-width: 800px) {
+  .lineContainer {
+  height: 80vh;
+  width: 80vh;
+  border-radius: 40vh;
+  }
+}
 
 .red {
   animation-delay: 0.02s;
@@ -142,7 +165,7 @@ opacity:0.6;
 
 @keyframes dance {
   from {
-    transform: translate(-20px) rotate(1deg) ;
+    transform: translate(-20px) rotate(1deg);
   }
   to {
     transform: translate(20px) rotate(0deg);
@@ -241,7 +264,7 @@ export default {
 
   methods: {
     verify() {
-      if (this.userAttempt == "kullamannen" || this.userAttempt == "Kullamannen") {
+      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt") {
         this.verified = true;
       }
     },
