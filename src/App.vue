@@ -304,7 +304,7 @@ export default {
   },
 
   mounted: function() {
-    console.log("added watcher 2,what");
+    console.log("cname");
   },
 
   watch: {
