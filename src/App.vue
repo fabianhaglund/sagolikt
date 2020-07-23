@@ -143,7 +143,7 @@ span {
   height: 80vw;
   width: 80vw;
   border-radius: 40vw;
-  animation: move 0.5s ease-in-out infinite alternate;
+  animation: move 0.48s ease-in-out infinite alternate;
 }
 @media (max-width: 800px) {
   .lineContainer {
@@ -186,11 +186,11 @@ span {
   overflow: hidden;
   text-align: center;
   color: blue;
-  animation: dance 1s ease infinite alternate;
+  animation: dance 0.96s ease infinite alternate;
 }
 
 .password-text-2 {
-  animation-duration: 0.5s;
+  animation-duration: 0.48s;
   margin: 20px 0px;
   height: 20px;
   line-height: 20px;
@@ -199,16 +199,16 @@ span {
   margin: 10px 0px;
   height: 10px;
   line-height: 10px;
-  animation-duration: 0.25s;
+  animation-duration: 0.24s;
 }
 .password-text-4 {
-  animation-duration: 0.12s;
+  animation-duration: 0.125s;
   margin: 15px 0px;
   height: 2px;
   line-height: 2px;
 }
 .password-text-5 {
-  animation-duration: 0.25s;
+  animation-duration: 0.24s;
   margin: 15px 0px;
   height: 2px;
   line-height: 2px;
@@ -263,7 +263,7 @@ export default {
       song: {
         id: "baom-baom",
         name: "Baumibam",
-        file: new Audio(require("./assets/depechePeople.mp3")),
+        file: new Audio(require("./assets/construct.mp3")),
         isPlaying: true
       }
     };

@@ -154,7 +154,7 @@ export default {
       song: {
         id: "baom-baom",
         name: "Baumibam",
-        file: new Audio(require("../assets/depechePeople.mp3")),
+        file: new Audio(require("../assets/construct.mp3")),
         isPlaying: false,
       },
     };
