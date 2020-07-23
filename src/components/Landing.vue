@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="picture-container">
-    <parallax class="paralax">
+    <parallax class="paralax" breakpoint="(min-width: 80px)">
       <img class="img-blend" src="../assets/old.jpg" />
     </parallax>
-    <parallax class="paralax">
+    <parallax class="paralax" breakpoint="(min-width: 80px)">
       <img src="../assets/inne.jpg" />
     </parallax>
-    <parallax class="paralax">
+    <parallax class="paralax" breakpoint="(min-width: 80px)">
       <img src="../assets/ute.jpg" />
     </parallax>
-    <parallax class="paralax">
+    <parallax class="paralax" breakpoint="(min-width: 80px)">
       <img src="../assets/ute2.jpg" />
     </parallax>
-    <parallax class="paralax">
+    <parallax class="paralax" breakpoint="(min-width: 80px)">
       <img src="../assets/tobo.jpg" />
     </parallax>
   </div>
