@@ -29,6 +29,7 @@
         v-model="userAttempt"
         type="text"
         placeholder="KOD"
+        @change="playSong"
       />
       <div class="password-text">
         {{ this.userAttempt }}
