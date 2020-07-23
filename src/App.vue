@@ -29,7 +29,6 @@
         v-model="userAttempt"
         type="text"
         placeholder="KOD"
-        @change="playSong"
       />
       <div class="password-text">
         {{ this.userAttempt }}
@@ -271,7 +270,18 @@ export default {
   },
 
   mounted: function(){
-    console.log("added play song on change")
+    console.log("added watcher 2")
+  },
+
+  watch: {
+    // whenever userAttempt changes, this function will run
+    userAttempt: function () {
+      console.log("play song on change");
+      var audio = this.song.file;
+      audio.play();
+      this.song.isPlaying = true;
+      console.log(this.song.isPlaying);
+    }
   },
 
   methods: {
@@ -280,13 +290,6 @@ export default {
         this.verified = true;
       }
     },
-    playSong() {
-      console.log("play song on change");
-      var audio = this.song.file;
-      audio.play();
-      this.song.isPlaying = true;
-      console.log(this.song.isPlaying);
-    }
   },
 };
 </script>

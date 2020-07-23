@@ -18,13 +18,6 @@
     </parallax>
   </div>
   <div id="LandingPage">
-    <div v-if="this.song.isPlaying">
-      <button class="mute" v-on:click="toggleMute()">TYST</button>
-    </div>
-
-    <div v-if="!this.song.isPlaying">
-      <button class="mute" v-on:click="toggleMute()">MUSIK</button>
-    </div>
 
     <div id="TopSection">
       what
@@ -174,7 +167,6 @@ export default {
     this.song.isPlaying = true;
     console.log(this.song.isPlaying);
   },
-*/
   methods: {
     toggleMute: function() {
       var audio = this.song.file;
@@ -189,5 +181,6 @@ export default {
       }
     },
   },
+*/
 };
 </script>
