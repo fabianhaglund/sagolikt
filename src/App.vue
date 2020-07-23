@@ -270,7 +270,7 @@ export default {
   },
 
   mounted: function(){
-    console.log("added play song on change")
+    console.log("added watcher")
   },
 
   watch: {
