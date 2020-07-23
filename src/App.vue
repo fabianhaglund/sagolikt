@@ -259,7 +259,13 @@ export default {
   data() {
     return {
       verified: false,
-      userAttempt: ""
+      userAttempt: "",
+      song: {
+        id: "baom-baom",
+        name: "Baumibam",
+        file: new Audio(require("./assets/depechePeople.mp3")),
+        isPlaying: true
+      }
     };
   },
 
@@ -269,6 +275,13 @@ export default {
         this.verified = true;
       }
     },
+    playSong() {
+      console.log("play song on change");
+      var audio = this.song.file;
+      audio.play();
+      this.song.isPlaying = true;
+      console.log(this.song.isPlaying);
+    }
   },
 };
 </script>
