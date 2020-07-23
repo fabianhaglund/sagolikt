@@ -52,6 +52,7 @@ width:100vw;
 }
 
 #LandingPage {
+min-height:6000px;
   position: relative;
   z-index: 999;
   display: flex;
