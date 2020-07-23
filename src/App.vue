@@ -2,7 +2,7 @@
   <div id="app">
     <!--  LOG IN SCREEN -->
     <div id="logIn" v-if="!this.verified">
-    <marquee style="color:white; position:absolute; top:10px; left:0;">KLICKA ENTER / RETUR EFTER INSKRIVEN KOD</marquee>
+    <marquee style="color:white; position:absolute; top:10px; left:0; width:100%">KLICKA ENTER / RETUR EFTER INSKRIVEN KOD</marquee>
       <div class="lineContainer" />
       <div class="lineContainer red" />
       <div class="lineContainer blue" />
