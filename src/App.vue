@@ -270,7 +270,7 @@ export default {
   },
 
   mounted: function(){
-    console.log("added watcher")
+    console.log("added watcher 2")
   },
 
   watch: {
