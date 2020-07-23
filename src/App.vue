@@ -2,10 +2,10 @@
   <div id="app">
     <!--  LOG IN SCREEN -->
     <div id="logIn" v-if="!this.verified">
+    <marquee style="color:white; position:absolute; top:10px; left:0;">KLICKA ENTER / RETUR EFTER INSKRIVEN KOD</marquee>
       <div class="lineContainer" />
       <div class="lineContainer red" />
       <div class="lineContainer blue" />
-
       <div class="password-text password-text-5">
         {{ this.userAttempt }}
       </div>
@@ -79,6 +79,7 @@ body {
   width: 100vw;
   max-width: 100vw;
   background: #111;
+  overflow:hidden;
 }
 
 span::selection {
@@ -147,9 +148,9 @@ span {
 }
 @media (max-width: 800px) {
   .lineContainer {
-  height: 80vh;
-  width: 80vh;
-  border-radius: 40vh;
+    height: 80vh;
+    width: 80vh;
+    border-radius: 40vh;
   }
 }
 
@@ -186,11 +187,11 @@ span {
   overflow: hidden;
   text-align: center;
   color: blue;
-  animation: dance 0.96s ease infinite alternate;
+  animation: dance 1s ease infinite alternate;
 }
 
 .password-text-2 {
-  animation-duration: 0.48s;
+  animation-duration: 0.5s;
   margin: 20px 0px;
   height: 20px;
   line-height: 20px;
@@ -199,16 +200,16 @@ span {
   margin: 10px 0px;
   height: 10px;
   line-height: 10px;
-  animation-duration: 0.24s;
+  animation-duration: 0.25s;
 }
 .password-text-4 {
-  animation-duration: 0.125s;
+  animation-duration: 0.12s;
   margin: 15px 0px;
   height: 2px;
   line-height: 2px;
 }
 .password-text-5 {
-  animation-duration: 0.24s;
+  animation-duration: 0.25s;
   margin: 15px 0px;
   height: 2px;
   line-height: 2px;
@@ -229,6 +230,40 @@ span {
   color: black;
 }
 
+@media (max-width: 750px) {
+  .password-text {
+    font-size: 40px;
+  margin: 10px 0px;
+  line-height: 20px;
+  height: 20px;
+  }
+  .password-text-2{
+  margin: 10px 0px;
+  height: 10px;
+  line-height: 10px;
+  }
+  .password-text-3{
+  margin: 10px 0px;
+  height: 4px;
+  line-height: 4px;
+  }
+  .password-text-4{
+  margin: 10px 0px;
+  height: 2px;
+  line-height: 2px;
+  }
+  .password-text-5{
+  margin: 10px 0px;
+  height: 2px;
+  line-height: 2px;
+  }
+  #password-box{
+  height:40px;
+  line-height: 40px;
+  }
+}
+
+
 #verifyButton {
   cursor: pointer;
   font-family: "Sorts Mill Goudy";
@@ -247,7 +282,6 @@ span {
 </style>
 
 <script>
-
 import Landing from "./components/Landing.vue";
 
 export default {
@@ -263,25 +297,25 @@ export default {
       song: {
         id: "baom-baom",
         name: "Baumibam",
-        file: new Audio(require("./assets/construct.mp3")),
-        isPlaying: true
-      }
+        file: new Audio(require("./assets/depechePeople.mp3")),
+        isPlaying: true,
+      },
     };
   },
 
-  mounted: function(){
-    console.log("added watcher 2")
+  mounted: function() {
+    console.log("added watcher 2,what");
   },
 
   watch: {
     // whenever userAttempt changes, this function will run
-    userAttempt: function () {
+    userAttempt: function() {
       console.log("play song on change");
       var audio = this.song.file;
       audio.play();
       this.song.isPlaying = true;
       console.log(this.song.isPlaying);
-    }
+    },
   },
 
   methods: {

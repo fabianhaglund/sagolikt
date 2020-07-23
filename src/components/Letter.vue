@@ -71,8 +71,10 @@
   padding: 16px;
   color: blue;
 }
-
-
+.sp-title{
+text-transform:uppercase;
+font-size:30px;
+}
 @media (max-width: 800px) {
   .letter {
     text-align: left;
