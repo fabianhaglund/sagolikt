@@ -320,7 +320,7 @@ export default {
 
   methods: {
     verify() {
-      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt" || this.userAttempt == "SAGOLIKT") {
+      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt") {
         this.verified = true;
       }
     },
