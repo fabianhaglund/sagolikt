@@ -29,7 +29,6 @@
         v-model="userAttempt"
         type="text"
         placeholder="KOD"
-        @change="playSong"
       />
       <div class="password-text">
         {{ this.userAttempt }}
@@ -274,19 +273,23 @@ export default {
     console.log("added play song on change")
   },
 
-  methods: {
-    verify() {
-      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt") {
-        this.verified = true;
-      }
-    },
-    playSong() {
+  watch: {
+    // whenever userAttempt changes, this function will run
+    userAttempt: function () {
       console.log("play song on change");
       var audio = this.song.file;
       audio.play();
       this.song.isPlaying = true;
       console.log(this.song.isPlaying);
     }
+  },
+
+  methods: {
+    verify() {
+      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt") {
+        this.verified = true;
+      }
+    },
   },
 };
 </script>
