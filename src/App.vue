@@ -270,6 +270,10 @@ export default {
     };
   },
 
+  mounted: function(){
+    console.log("added play song on change")
+  },
+
   methods: {
     verify() {
       if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt") {
