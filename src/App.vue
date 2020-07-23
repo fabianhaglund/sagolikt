@@ -304,7 +304,7 @@ export default {
   },
 
   mounted: function() {
-    console.log("cname");
+    console.log("sagolikt");
   },
 
   watch: {
@@ -320,7 +320,7 @@ export default {
 
   methods: {
     verify() {
-      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt") {
+      if (this.userAttempt == "sagolikt" || this.userAttempt == "Sagolikt" || this.userAttempt == "SAGOLIKT") {
         this.verified = true;
       }
     },
