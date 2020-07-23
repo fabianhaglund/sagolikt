@@ -166,7 +166,7 @@ export default {
       },
     };
   },
-
+/*
   mounted: function() {
     console.log("Play song on mount");
     var audio = this.song.file;
@@ -174,7 +174,7 @@ export default {
     this.song.isPlaying = true;
     console.log(this.song.isPlaying);
   },
-
+*/
   methods: {
     toggleMute: function() {
       var audio = this.song.file;

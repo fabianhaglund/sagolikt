@@ -247,6 +247,7 @@ span {
 </style>
 
 <script>
+
 import Landing from "./components/Landing.vue";
 
 export default {
@@ -259,7 +260,21 @@ export default {
     return {
       verified: false,
       userAttempt: "",
+      song: {
+        id: "baom-baom",
+        name: "Baumibam",
+        file: new Audio(require("./assets/depechePeople.mp3")),
+        isPlaying: true
+      }
     };
+  },
+
+  mounted: function() {
+    console.log("play song on land");
+    var audio = this.song.file;
+    audio.play();
+    this.song.isPlaying = true;
+    console.log(this.song.isPlaying);
   },
 
   methods: {
