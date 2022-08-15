@@ -62,14 +62,6 @@ div {
   background-color: rgba(0,0,0,0.7);
 }
 
-.dot {
-  animation: blink 2s infinite;
-  width: 10vw;
-  height: 10vh;
-  border-radius: 2vh;
-  background-color: rgb(200,60,60);
-}
-
 @keyframes blink {
   0%, 100% {   transform: scale(1.0);} /* more concise! */
   50% {   transform: scale(0.8); }

@@ -1,0 +1,9 @@
+{
+  "short_name": "Tobo",
+  "name": "Tobo",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "rgb(200,60,60)",
+  "background_color": "rgb(45,105,155)"
+}

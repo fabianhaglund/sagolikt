@@ -156,22 +156,6 @@ function App() {
             src={Moose}
             alt="This is an animated gif image, but it does not move"
           />
-          {/* <div
-            style={{
-              width: "20vh",
-              height: "20vh",
-              borderRadius: "20vw",
-              backgroundColor: "rgb(200,60,60)",
-            }}
-          ></div>
-          <div
-            style={{
-              width: "20vh",
-              height: "20vh",
-              borderRadius: "20vw",
-              backgroundColor: "rgb(45, 105, 155)",
-            }}
-          ></div> */}
         </div>
       ) : null}
     </div>
